@@ -2,3 +2,187 @@ html {
   height: 100%;
   width: 100%;
 }
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  width: 100px;
+  height: 30px;
+  background-color: #f33;
+  border: none;
+  border-radius: 5%;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+input{
+  height: 32px;
+  border: 1px solid #a7a3a3;
+  border-radius: 5%;
+  width: 250px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;/* Safari */
+  top: 0;
+  background-color: white;
+  padding: 5px 30px 10px 30px;
+  border-bottom: 3px solid #e1e1e1;
+  height: auto;
+}
+
+header .brand {
+  width: 250px;
+  height: 32px;
+}
+.namebrand   {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.member{
+  display: table;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.member a {
+  position: relative;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #565;
+  cursor: pointer;    
+}       
+.member img {
+  width: 32px;
+  height: 32px;
+  padding: 10px 12.5px;
+}
+
+header .member a img {
+  margin-right: 10px;
+}
+.member a:hover > img {
+  border: 1px solid #fff;     
+  color: #fff;
+}
+.avt {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}   
+.avt-user{
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.member a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.member .avt-user {
+  padding: 10px 12.5px;
+}
+.content{
+  width: 100%;    
+  height: 45px;
+  display: flex;
+  justify-content: flex-end ;
+  padding: 17px 0px;  
+}
+
+.search-header{
+  position: relative; 
+  left: -50px; 
+  top: 1px;
+}
+.search-header input{        
+  padding-left: 10px;
+} 
+
+.search-header button{
+  margin-left: 20px;
+  color: white;
+}
+.formadd{
+      position: fixed;
+      top: 40%;       
+      left: 40%;
+      overflow-y: auto;   
+      background-color: rgba(12, 136, 231, 0.9);
+      transition: .2s ease;
+      width: 400px;
+      /* height: 45vh; */
+      display: none;
+      /* transform: scale(0); */
+}
+#addBookForm {
+  width: 90%;
+  margin: 40px auto;
+  position: relative;
+  padding: 32px 0px;  
+ }
+ .field-wrap{
+  display: flex;   
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100% ;
+ }
+#formTitle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+#closeButton {
+position: absolute;
+top: 5px;
+right: 5px;
+font-size: 1.5rem;
+width: 1em;
+height: 1em;
+line-height: 1em;
+text-align: center;
+color: #aaa;
+cursor: pointer;
+transition: .2s ease;
+}
+#closeButton:hover {
+  color: #fff;
+  background-color: #f33;
+  border-radius: 50%;
+}
+#btnCreate{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  
+}
+#topic{
+  width: 140px;
+  height: 30px;
+}
+
+
+
+
