@@ -5,50 +5,69 @@
     <meta name="viewport" content="width=device-width" />
     <title>Bookstore</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
   </head>
-
   <body>
+    <div class="wrap"></div>
+  <!-- Header -->
     <header>
         <div class="brand"><h1 class="name-brand">Bookstore</h1></div>
         <div class="member">
-             <a><img class="avt avt-user" src="https://vcdn1-giaitri.vnecdn.net/2023/04/28/doraemon4-1682675790-8961-1682675801.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=EAxUAFcakJsi4GQW0mYsCQ" alt="avata user" >
-                <h4>NEMO</h4></a>   
+             <a><i class="fa-solid fa-user avt avt-user"></i>
+                <p>NEMO</p></a>   
         </div>
     </header>
-   <div class="content">
-    <div class="search-header" >
+
+  <!-- Content -->
+   <div class="container">
+      <!-- Search+Add-->
+        <div class="search" >
               <input id="search-box" name="search" autocomplete="off" type="text" placeholder="Search books">
-              <button id="btAdd" onclick="displayForm()">Add book</button>
-     </div>
-   
-       <div class="formadd">  
+              <button id="btnAdd" onclick="displayForm()">Add book</button>
+        </div>
+      <!-- table -->
+        <div>
+
+        </div>
+      <!-- FormAdd -->
+        <div class="addBooksContainer">  
           <h3  id="formTitle">Add book</h3>
-          <span id="closeButton" onclick="closeForm()">X</span>
-          <form id="addBookForm" action="#">
-              <div class="field-wrap">
+          <span class="closeButton" id="closeButtonAdd">X</span>
+          <form class="addBooksForm" action="#">
+             <div class="field-wrap">
                   <label>Name<span class="req">*</span></label>
-                  <input name='bookName' type="text" required autocomplete="off" /><br><br>
-              </div> 
-              <!-- book name -->
-              <div class="field-wrap">
+                  <input name='bookName' type="text" required autocomplete="off" />
+             </div> 
+             <div class="field-wrap">
                   <label>Author<span class="req">*</span></label>
-                  <input name="author" type="text" required autocomplete="off" /><br><br>
-              </div> 
-              <!-- author -->
-              <div class="field-wrap">  
-                  <label for="topic">Topic:</label>
-                <select id="topic" name="topic">
-                  <option value="fiction">Fiction</option>
-                  <option value="nonfiction">Non-Fiction</option>
-                  <option value="fantasy">Fantasy</option>
-                  <option value="romance">Romance</option>
-                </select><br><br>
-               </div>
-                <!-- topic -->
+                  <input name="author" type="text" required autocomplete="off" />
+             </div> 
+             <div class="field-wrap">  
+                   <label for="topic" id="topiclabel">Topic</label>
+                   <select id="topic" name="topic">
+                       <option value="Programming">Programming</option>
+                       <option value="Database">Database</option>
+                       <option value="DevOps">DevOps</option>
+                    </select>
+              </div>
             <button id="btnCreate">Create</button> 
-         </form>
-         </div>
-      </div >
+          </form>
+      </div>
+    <!-- FormDelete -->
+      <div class="deleteBooksContainer">
+        <div class="titleDelete">
+            <h3  id="titleDelete">Delete book</h3>
+            <span class="closeButton" id="closeButtonDelete">X</span>
+        </div> 
+        <div class="alert">
+            <p>Do you want to delete <b>Refactoring</b> book ?</p>
+        </div>
+        <div class="confirmDelete">
+            <button id="delete" class="delete" >Delete</button>
+            <button id="cancel" class="cancel" onmouseenter="myMoveFunction(event)" onmouseleave="myLeaveFunction(event)">Cancel</button>
+        </div>
+      </div>
+   </div >
     <script src="script.js"></script>
   </body>
 </html>
