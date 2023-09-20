@@ -20,14 +20,33 @@
 
   <!-- Content -->
    <div class="container">
-      <!-- Search+Add-->
+      <!-- Search+Add button-->
         <div class="search" >
               <input id="search-box" name="search" autocomplete="off" type="text" placeholder="Search books">
-              <button id="btnAdd" onclick="displayForm()">Add book</button>
+              <button id="btnAdd" >Add book</button>
         </div>
       <!-- table -->
-        <div>
-
+      <div class="containerTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Author</th>
+              <th>Topic</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="inforBooks">
+            <!-- <tr>
+              <td>Refactoring</td>
+              <td>Martin Fowler</td>
+              <td>Programming</td>
+              <td>
+               <button id="deleteBook"><ins >Delete</ins></button> 
+              </td>
+            </tr> -->
+           </tbody>
+          </table>      
         </div>
       <!-- FormAdd -->
         <div class="addBooksContainer">  
@@ -35,12 +54,12 @@
           <span class="closeButton" id="closeButtonAdd">X</span>
           <form class="addBooksForm" action="#">
              <div class="field-wrap">
-                  <label>Name<span class="req">*</span></label>
-                  <input name='bookName' type="text" required autocomplete="off" />
+                  <label for="name">Name<span class="req">*</span></label>
+                  <input name='bookName' id="name" type="text" required autocomplete="off" />
              </div> 
              <div class="field-wrap">
-                  <label>Author<span class="req">*</span></label>
-                  <input name="author" type="text" required autocomplete="off" />
+                  <label for="author">Author<span class="req">*</span></label>
+                  <input name="author" id="author" type="text" required autocomplete="off" />
              </div> 
              <div class="field-wrap">  
                    <label for="topic" id="topiclabel">Topic</label>
