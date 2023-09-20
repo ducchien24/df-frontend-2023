@@ -136,7 +136,9 @@ header a:hover > i {
 table, td, th {
   border: 1px solid;
 }
-
+table tr{
+  height: 30px;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -167,8 +169,8 @@ table tbody td ins{
  /* addBooks CSS */
 .addBooksContainer{
       position: fixed;
-      top: 40%;       
-      left: 40%;
+      top: 20%;       
+      left: 35%;
       overflow-y: auto;   
       background-color: rgb(248, 248, 248);
       transition: .2s ease;
@@ -177,7 +179,7 @@ table tbody td ins{
       border-radius: 2%;
       /* height: 45vh; */
       /* display: none; */
-      transform: scale(0);
+      transform: scale(0);  
       z-index: 2;
 }
 .addBooksForm {
@@ -261,8 +263,8 @@ table tbody td ins{
 /* Delete CSS */
 .deleteBooksContainer{
   position: fixed;
-  top: 40%;       
-  left: 40%;
+  top: 25%;       
+  left: 35%;
   height: 200px;
   width: 300px;
   display: flex;
@@ -287,7 +289,7 @@ table tbody td ins{
   font-size: 1.3rem;
 }
 .deleteBooksContainer .alert{
-  width: 170px;
+  width: 200px;
   text-align: center ;
 }
 .deleteBooksContainer .confirmDelete{

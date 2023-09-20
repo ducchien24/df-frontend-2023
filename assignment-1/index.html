@@ -22,7 +22,7 @@
    <div class="container">
       <!-- Search+Add button-->
         <div class="search" >
-              <input id="search-box" name="search" autocomplete="off" type="text" placeholder="Search books">
+              <input id="search-box" name="search" oninput="searchBook()" autocomplete="off" type="text" placeholder="Search books">
               <button id="btnAdd" >Add book</button>
         </div>
       <!-- table -->
@@ -79,7 +79,7 @@
             <span class="closeButton" id="closeButtonDelete">X</span>
         </div> 
         <div class="alert">
-            <p>Do you want to delete <b>Refactoring</b> book ?</p>
+            <p>Do you want to delete <b id="nameBookDelete">Refactoring</b> book ?</p>
         </div>
         <div class="confirmDelete">
             <button id="delete" class="delete" >Delete</button>
